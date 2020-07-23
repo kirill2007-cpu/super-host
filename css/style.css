@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgb(86, 153, 97);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 86px;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item+.header__item {
+    margin-left: 44px;
+}
