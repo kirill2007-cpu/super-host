@@ -21,9 +21,7 @@ a {
     text-decoration: none;
 }
 
-.header {
-    background-color: rgb(86, 153, 97);
-}
+.header {}
 
 .header__inner {
     display: flex;
@@ -38,4 +36,22 @@ a {
 
 .header__item+.header__item {
     margin-left: 44px;
+}
+
+.intro__inner {
+    display: flex;
+}
+
+.intro {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 830px;
+    /* color: rgb(255, 255, 255); */
+    color: #fff;
+}
+
+.intro__text {
+    width: 547px;
 }
