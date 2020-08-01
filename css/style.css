@@ -1,57 +1,88 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-}
-
-ul {
-    list-style-type: none
-}
-
-a {
-    text-decoration: none;
-}
-
-.header {}
-
-.header__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 86px;
-}
-
-.header__list {
-    display: flex;
-}
-
-.header__item+.header__item {
-    margin-left: 44px;
-}
-
-.intro__inner {
-    display: flex;
-}
-
-.intro {
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 830px;
-    /* color: rgb(255, 255, 255); */
-    color: #fff;
-}
-
-.intro__text {
-    width: 547px;
-}
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *::after,
+        *::before {
+            box-sizing: inherit;
+        }
+        
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .header {}
+        
+        .header__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 86px;
+        }
+        
+        .header__list {
+            display: flex;
+        }
+        
+        .header__item+.header__item {
+            margin-left: 44px;
+        }
+        
+        .intro__inner {
+            display: flex;
+        }
+        
+        .intro {
+            background-image: url(../images/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 830px;
+            /* color: rgb(255, 255, 255); */
+            color: #fff;
+        }
+        
+        .intro__text {
+            width: 547px;
+        }
+        
+        .box {
+            height: 80px;
+            width: 80px;
+            /* background-color: brown; */
+        }
+        
+        .box::before {
+            content: "";
+            background-image: url(/images/done.png);
+            height: 16px;
+            width: 16px;
+            position: absolute;
+        }
+        
+        .box2 {
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            position: relative;
+        }
+        
+        .box_3 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
