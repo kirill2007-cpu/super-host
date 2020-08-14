@@ -42,6 +42,8 @@ a {
 
 .intro__inner {
   display: flex;
+  align-items: center;
+  height: 830px;
 }
 
 .intro {
@@ -49,7 +51,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 830px;
   /* color: rgb(255, 255, 255); */
   color: #fff;
 }
@@ -59,6 +60,7 @@ a {
 }
 
 .intro__item {
+  padding-left: 24px;
   position: relative;
 }
 .intro__item::before {
@@ -67,8 +69,8 @@ a {
   height: 16px;
   width: 16px;
   position: absolute;
-  left: 10px;
-  top: 0px;
+  left: 0px;
+  top: 3px;
 }
 
 .intro__img {
@@ -81,14 +83,15 @@ a {
   width: 425px;
 }
 
-.intro__price {
-  position: relative;
+.intro__pricing {
+  position: absolute;
   border-radius: 50%;
   background-color: #fff;
   height: 230px;
   width: 230px;
   color: #000;
-  right: 10px;
+  right: 0px;
+  top: 0;
 }
 
 .box {
@@ -108,4 +111,59 @@ a {
 
 .intro__month {
   text-align: end;
+}
+
+.intro__pricing-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro__wordpress-logo {
+  background-image: url(../images/wordpress.png);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  /* position: relative;
+  top: 5px; */
+  transform: translateY(5px);
+}
+
+.intro__button {
+  border-radius: 50px;
+  height: 47px;
+  width: 225px;
+  color: #fff;
+  border: 3px solid #fff;
+  outline: none;
+  display: inline-block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__offer {
+  margin-top: 10px;
+}
+
+.intro__title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price__title span {
+  color: #2575e7;
+  display: inline-block;
+}
+
+.price__title {
+  text-align: center;
+}
+
+.price__text {
+  text-align: center;
+  padding: 0 265px;
 }
